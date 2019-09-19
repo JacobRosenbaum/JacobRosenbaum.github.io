@@ -1,0 +1,92 @@
+
+body{
+   
+    background: url("../images/concrete_seamless.png");
+    background-size: auto, cover;
+   
+}
+
+.header{
+    position:relative;
+    top:0px; 
+    background-color: white;
+    margin-top: 0px; 
+    border-bottom: 4px solid #cccccc;
+    height: 100px; 
+    width: 960px; 
+    margin: 0 auto; 
+}
+#abc{
+    color: #777777;
+    margin-top: 45px; 
+    float: right; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 25px; 
+}
+#abc:hover{
+cursor: pointer;
+text-decoration: underline;
+color: lightblue;
+}
+#h2{
+    color: white;
+    background-color: #4aaaa5;
+    float: left; 
+    padding: 12px;
+    padding-left: 30px; 
+    font-size: 18px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 960px; 
+    margin: 0 auto;
+    border: 2px #cccccc; 
+}
+.aboutme {
+    background-color: white;
+    margin-top: 20px; 
+    padding-left: 25px; 
+    padding-right: 25 px; 
+    padding-bottom: 375px; 
+    
+}
+
+#bio-image{
+margin-right: 15px; 
+float: left;
+margin-bottom: 20px; 
+}
+#text {
+    float: left; 
+    /*margin-left: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding-right: 35px; 
+    color: #777777;
+    line-height: 22px; 
+    font-size: 17px; 
+    margin-right: 25px; 
+    
+}
+h1{
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px ;
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+    width: 910px; 
+    border-bottom: 4px solid #cccccc;
+
+}
+#footer {
+    bottom: 0px; 
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    line-height: 40px; 
+    color: white;
+}
+
