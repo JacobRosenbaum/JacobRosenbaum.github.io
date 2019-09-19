@@ -5,7 +5,13 @@ body{
     background-size: auto, cover;
    
 }
-
+#white{
+    position:relative;
+    top:0px; 
+    background-color: white;
+    z-index: 3; 
+    width: 100%; 
+}
 .header{
     position:relative;
     top:0px; 
@@ -15,19 +21,45 @@ body{
     height: 100px; 
     width: 960px; 
     margin: 0 auto; 
+    margin-bottom: 20px; 
+    z-index: 30; 
 }
-#abc{
+#contact{
     color: #777777;
     margin-top: 45px; 
     float: right; 
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 25px; 
+    margin-left:4px;
 }
-#abc:hover{
+#portfolio{
+    color: #777777;
+    margin-top: 45px; 
+    float: right; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about{
+    color: #777777;
+    margin-top: 45px; 
+    float: right; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:4px;
+}
+#contact:hover{
 cursor: pointer;
 text-decoration: underline;
 color: lightblue;
 }
+#about:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: lightblue;
+    }
+#portfolio:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: lightblue;
+        }
 #h2{
     color: white;
     background-color: #4aaaa5;
@@ -41,21 +73,22 @@ color: lightblue;
 .container{
     width: 960px; 
     margin: 0 auto;
-    border: 2px #cccccc; 
+    
 }
 .aboutme {
     background-color: white;
-    margin-top: 20px; 
+    margin-top: 20\\40px; 
     padding-left: 25px; 
     padding-right: 25 px; 
-    padding-bottom: 375px; 
+    padding-bottom: 450px; 
+    border: 2px #cccccc; 
     
 }
 
 #bio-image{
-margin-right: 15px; 
+margin-right: 20px; 
 float: left;
-margin-bottom: 20px; 
+margin-bottom: 15px; 
 }
 #text {
     float: left; 
@@ -64,9 +97,10 @@ margin-bottom: 20px;
     text-align: justify;
     padding-right: 35px; 
     color: #777777;
-    line-height: 22px; 
-    font-size: 17px; 
+    padding-top: 0px; 
+    font-size: 19px; 
     margin-right: 25px; 
+    line-height: 30px;
     
 }
 h1{
