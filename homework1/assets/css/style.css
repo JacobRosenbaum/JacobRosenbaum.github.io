@@ -6,11 +6,13 @@ body{
    
 }
 #white{
-    position:relative;
+    position:fixed;
     top:0px; 
     background-color: white;
     z-index: 3; 
     width: 100%; 
+    border-bottom: 4px solid #cccccc;
+    height: 108px; 
 }
 .header{
     position:relative;
@@ -29,7 +31,7 @@ body{
     margin-top: 45px; 
     float: right; 
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 25px; 
+    padding-right: 0px; 
     margin-left:4px;
 }
 #portfolio{
