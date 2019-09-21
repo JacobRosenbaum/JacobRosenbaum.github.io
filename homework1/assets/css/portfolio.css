@@ -61,6 +61,12 @@ color: lightblue;
         text-decoration: underline;
         color: lightblue;
         }
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
 #h2{
     color: white;
     background-color: #4aaaa5;
@@ -81,7 +87,7 @@ color: lightblue;
     margin-top: 20\\40px; 
     padding-left: 25px; 
     padding-right: 25 px; 
-    padding-bottom: 530px; 
+    padding-bottom: 180px; 
     border: 2px #cccccc; 
     
 }
@@ -102,14 +108,15 @@ h1{
     width: 200px; 
     float: left; 
     z-index: 1;
+    margin: 18px; 
 }
 #text1{
     color: white;
     background-color: #4aaaa5;
     height: 30px; 
     position: absolute;
-    align: left;
-    bottom: 475px; 
+    left: 403px; 
+    bottom: 460px; 
     width: 200px; 
     z-index: 50;
     text-align: center;
@@ -122,6 +129,7 @@ h1{
     float: left; 
     margin-left: 50px; 
     z-index: 1;
+    margin: 18px; 
 }
 #text2{
     color: white;
@@ -129,7 +137,8 @@ h1{
     height: 30px; 
     position: absolute;
     align: left;
-    bottom: 475px; 
+    left: 389px; 
+    bottom: 460px; 
     width: 200px; 
     z-index: 50;
     text-align: center;
@@ -137,21 +146,30 @@ h1{
     padding-top: 10px;  
     margin-left: 250px; 
 }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
 #skyline{
     height: 150px; 
     width: 200px; 
-    position: absolute;
-    bottom: 290px;
-    left: 396px; 
+    float: left;
+    margin: 18px; 
     z-index: 1;
+    
+   
 }
 #text3{
     color: white;
     background-color: #4aaaa5;
     height: 30px; 
     position: absolute;
-    align: left;
-    bottom: 300px; 
+    align: left; 
+    left: 403px; 
+    bottom: 276px; 
     width: 200px; 
     z-index: 50;
     text-align: center;
@@ -161,10 +179,10 @@ h1{
 #plane{
     height: 150px; 
     width: 200px; 
-    position: absolute;
-    bottom: 290px;
-    left: 646px; 
+   float: left;
+    margin-left: 50px;
     z-index: 1;
+    margin: 18px; 
 }
 #text4{
     color: white;
@@ -172,7 +190,8 @@ h1{
     height: 30px; 
     position: absolute;
     align: left;
-    bottom: 300px; 
+    left: 389px; 
+    bottom: 276px; 
     width: 200px; 
     z-index: 50;
     text-align: center;
@@ -183,9 +202,8 @@ h1{
 #mountain {
     height: 150px; 
     width: 200px; 
-    position: absolute;
-    bottom: 113px;
-    left: 396px; 
+    float: left;
+    margin: 18px; 
     z-index: 1;
 }
 #text5{
@@ -193,7 +211,7 @@ h1{
     background-color: #4aaaa5;
     height: 30px; 
     position: absolute;
-    align: left;
+    left: 403px; 
     bottom: 125px; 
     width: 200px; 
     z-index: 50;

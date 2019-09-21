@@ -61,6 +61,12 @@ color: lightblue;
         text-decoration: underline;
         color: lightblue;
         }
+        a:link{
+            text-decoration: none;
+        }
+        a:visited{
+            color: inherit;
+        }
 #h2{
     color: white;
     background-color: #4aaaa5;

@@ -18,7 +18,7 @@ body{
     position:relative;
     top:0px; 
     background-color: white;
-    margin-top: 0px; 
+  
     border-bottom: 4px solid #cccccc;
     height: 100px; 
     width: 960px; 
@@ -46,6 +46,12 @@ body{
     float: right; 
     font-family: Arial, Helvetica, sans-serif;
     margin-right:4px;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
 }
 #contact:hover{
 cursor: pointer;
