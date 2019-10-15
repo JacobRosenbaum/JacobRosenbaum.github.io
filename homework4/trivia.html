@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,37 +10,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Trivia Game</title>
-  </head>
-  <body>
-        <span id ="timer">Time: </span> <button id ="view">View Highscores</button> 
-    <div class = "container">
+</head>
+
+<body>
+    <span id="timer">Time: </span> <button id="view">View Highscores</button>
+    <div class="container">
         <div class="jumbotron">
             <div id="beg">
                 <h1 class="display-4">Spongebob Squarepants Quiz</h1>
                 <p class="lead"> Try to answer the following Spongebob-related questions within the time limit. Keep in mind that incorrect answers will subtract ten seconds from your time.</p>
                 <hr class="my-4">
-                <button type="button" id = "startQuiz" class="btn btn-primary">Start Quiz</button>
-           
-            </div>
-            <div id="emptyDiv">
-            
-            <button onclick="submitAnswer(this)" class = "buttonAnswer" style = display:none>
-              
-            </button>   
-            <button onclick="submitAnswer(this)" class = "buttonAnswer" style = display:none>
-              
-            </button>   
-            <button onclick="submitAnswer(this)" class = "buttonAnswer" style = display:none>    
+                <button type="button" id="startQuiz" class="btn btn-primary">Start Quiz</button>
 
-            </button> 
-            <button onclick="submitAnswer(this)" class = "buttonAnswer" style = display:none>  
-              
-            </button>   
-            <div id = "alert"></div>
+            </div>
+            <div id="wholeDiv">
+                <div id="questionDiv"></div>
+                <div id="emptyDiv">
+
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
+
+        </button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
+
+        </button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
+
+        </button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
+
+        </button>
+                    <div id="div1"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="trivia.js"></script>
-  </body>
+</body>
+
 </html>

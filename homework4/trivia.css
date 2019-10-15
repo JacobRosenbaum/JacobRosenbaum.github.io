@@ -1,16 +1,18 @@
-body{
+body {
     background-color: yellow;
 }
 
-.jumbotron{
+.jumbotron {
     text-align: center;
     background-color: pink;
 }
-button{
-    cursor:pointer;
-    margin: 10px; 
+
+button {
+    cursor: pointer;
+    margin: 10px;
 }
-#timer{
-    float: right; 
-    margin-right: 30px; 
+
+#timer {
+    float: right;
+    margin-right: 30px;
 }
