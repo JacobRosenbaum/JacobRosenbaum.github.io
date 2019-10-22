@@ -1,0 +1,55 @@
+.jumbotron {
+    text-align: center;
+    border-bottom: 11px solid black;
+}
+
+#displayMoment {
+    font-size: 30px;
+}
+
+form {
+    width: 75%;
+    margin: 0px auto;
+    margin-right: 23%;
+}
+
+.col-lg-10 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.col-lg-2 {
+    text-align: right;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+
+.row {
+    border-top: 1px solid lightgrey;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.col-lg-1 {
+    margin-top: 20px;
+}
+
+.lock {
+    width: 90px;
+    height: 90px;
+}
+
+img:hover {
+    cursor: pointer;
+    border: 1px solid lightblue;
+}
+
+#exampleFormControlTextarea1 {
+    background-color: lightgrey;
+}
+
+@media (max-width:1000px) {
+    .container {
+        width: 985px;
+    }
+}
