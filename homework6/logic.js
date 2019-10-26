@@ -27,7 +27,7 @@ function getWeather() {
 
     });
 
-    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityValue + "&units=imperial&type=accurate&mode=json&APPID=" + apiKey;
+    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityValue + "&units=imperial&type=accurate&mode=json&APPID=" + apiKey;
     console.log(queryURL);
 
     $.ajax({
