@@ -5,7 +5,7 @@ var now = moment().format('MMMM Do, YYYY');
 function getWeather() {
     event.preventDefault();
     var cityValue = $("#inputValue").val().trim();
-    var queryURL = "http://api.openweathermap.org/data/2.5/find?q=" + cityValue + "&units=imperial&type=accurate&mode=json&APPID=" + apiKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/find?q=" + cityValue + "&units=imperial&type=accurate&mode=json&APPID=" + apiKey;
     console.log(queryURL);
 
     $.ajax({
@@ -27,7 +27,7 @@ function getWeather() {
 
     });
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityValue + "&units=imperial&type=accurate&mode=json&APPID=" + apiKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityValue + "&units=imperial&type=accurate&mode=json&APPID=" + apiKey;
     console.log(queryURL);
 
     $.ajax({
@@ -57,6 +57,7 @@ $("#searchButton").on("click", function(event) {
 
 });
 $(window).on("load", function() {
+    console.log("js change");
     var newCity = localStorage.getItem("city");
     $("#searchDiv").prepend(newCity);
     $("#inputValue").val(newCity);
