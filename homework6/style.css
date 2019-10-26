@@ -1,7 +1,12 @@
-    #navbar {
-        text-align: center;
+    .text-center {
         font-weight: bold;
         font-size: 30px;
+        background-color: green;
+        color: white;
+    }
+    
+    h1 {
+        text-align: center;
     }
     
     #search {
@@ -21,6 +26,20 @@
     
     #forecast {
         font-size: 23px;
+    }
+    
+    #searchDiv {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    
+    .days {
+        display: inline-block;
+        background-color: green;
+        width: 100px;
+        color: white;
+        margin: 5px;
+        padding: 5px;
     }
     /* button {
         background-color: white;
