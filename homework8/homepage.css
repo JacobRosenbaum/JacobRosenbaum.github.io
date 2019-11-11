@@ -1,0 +1,41 @@
+body {
+    background: url("assets/concrete.png");
+    background-size: auto, cover;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+#name {
+    margin-top: 100px;
+    font-size: 75px;
+}
+
+#info {
+    margin-top: 150px;
+}
+
+#symbols {
+    margin-top: 150px;
+}
+
+#github {
+    font-size: 65px;
+    margin-left: 200px;
+}
+
+#linked {
+    font-size: 65px;
+    margin-right: 200px;
+}
+
+#grad {
+    font-size: 65px;
+}

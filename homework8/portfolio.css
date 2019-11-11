@@ -1,0 +1,119 @@
+body {
+    background: url("assets/concrete.png");
+    background-size: auto, cover;
+}
+
+#nav {
+    background-color: white;
+    margin-bottom: 35px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#jacob {
+    background-color: black;
+    color: white;
+    padding: 13px;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.jumbotron {
+    background: url("assets/concrete.png");
+    color: #777777;
+    /* border: #dddddd solid 2px; */
+}
+
+.row {
+    font-family: 'Roboto Mono', monospace;
+    color: #777777;
+}
+
+.col-lg-3 {
+    margin-right: 25px;
+}
+
+.col-lg-7 {
+    margin-bottom: 0px;
+}
+
+.nav-item {
+    font-family: 'Roboto Mono', monospace;
+    color: #777777;
+}
+
+
+/*.col-lg-10{
+    margin-left: 10%; 
+}*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.label {
+    position: relative;
+    bottom: 45px;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    width: 300px;
+    text-align: center;
+    font-size: 17px;
+    height: 30px;
+}
+
+img {
+    width: 300px;
+    height: 210px;
+}
+
+#box {
+    width: 300px;
+    height: 210px;
+    background-color: moccasin;
+}
+
+.label:hover {
+    color: blue;
+}
+
+#lock {
+    color: black;
+    position: relative;
+    left: 150px;
+    top: 80px;
+}
+
+#projects {
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 1200px) {
+    img {
+        margin: 30px;
+    }
+    label {
+        margin: 30px;
+    }
+}
+
+.slideInDown {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
