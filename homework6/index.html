@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
     <title>Weather API</title>
 </head>
@@ -18,19 +20,22 @@
     <header>
         <div class="text-center">
             <h1 id="weather">Weather Dashboard</h1>
+            <h3 id="date"></h3>
         </div>
     </header>
     <div class="container">
+
         <div class="row">
+
             <div id="search" class="col-lg-4">
-                <p>Search for a City:</p>
+
                 <form class="form-inline">
-                    <input id="inputValue" class=" form-control mr-sm-2 " type="search " placeholder="Search " aria-label="Search ">
-                    <button id="searchButton" class="btn btn-outline-primary my-2 my-sm-0 " type="submit "> Search </button>
+                    <input id="inputValue" class=" form-control mr-sm-2 " type="search " placeholder="Search for a city" aria-label="Search ">
+                    <button id="searchButton" type="button" class="btn btn-outline-light">Search <i class="far fa-snowflake"></i></button>
                     <div id="searchDiv"></div>
                 </form>
             </div>
-            <div class="col-lg-8 ">
+            <div class="col-lg-4">
                 <div id="current">
                     <div id="cityName">
 
@@ -44,20 +49,19 @@
                     <div id="wind">
 
                     </div>
+                    <div id="description">
+
+                    </div>
                 </div>
-
-                <div class="col-lg-12 ">
-                    <div id="forecast">
-                        5 Day Forecast:
-                    </div>
-                    <div id="forecast1">
-
-                    </div>
-
+            </div>
+            <div class="col-lg-4">
+                <div id="forecast">
+                </div>
+                <div id="forecast1">
                 </div>
             </div>
         </div>
-    </div>
+
     </div>
     <script src="logic.js"></script>
 </body>

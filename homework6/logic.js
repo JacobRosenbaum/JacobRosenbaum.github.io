@@ -1,6 +1,11 @@
 var apiKey = "e84c468c18a9f7388a0eb7ae72214832";
 
 var now = moment().format('MMMM Do, YYYY');
+$("#date").text(now);
+// $("#date").css("color", "white");
+
+var tomorrow = moment().add(1, 'ddd');
+
 
 function getWeather() {
     event.preventDefault();
@@ -13,15 +18,17 @@ function getWeather() {
         type: "GET",
     }).then(function(response) {
         console.log(response);
-        $("#cityName").html("<h1>" + response.list[0].name + " " + now + "</h1>");
-        $("#temp").html("<h2>" + "Temperature: " + response.list[1].main.temp + " F" + "</h2>");
-        $("#humidity").html("<h2>" + "Humidity: " + response.list[1].main.humidity + " %" + "</h2>");
-        $("#wind").html("<h2>" + "Wind Speed " + response.list[2].wind.speed + " MPH" + "</h2>");
-        $("#searchDiv").text(response.list[0].name);
+        $("#cityName").html("<h1>" + response.list[0].name + "</h1>");
+        $("#temp").html(`<h3> Temperature: ${response.list[0].main.temp}&deg;F </h3>`);
+        $("#humidity").html("<h3>" + "Humidity: " + response.list[0].main.humidity + " %" + "</h3>");
+        $("#wind").html("<h3>" + "Wind Speed: " + response.list[0].wind.speed + " MPH" + "</h3>");
+        $("#description").html("<h3>" + response.list[0].weather[0].main + "</h3>");
 
-        console.log("Temperature: " + response.list[1].main.temp + " F");
-        console.log("Humidity: " + response.list[1].humidity + " %");
-        console.log("Wind Speed " + response.list[2].wind.speed + " MPH");
+        // $("#searchDiv").text(response.list[0].name);
+
+        console.log("Temperature: " + response.list[0].main.temp + " F");
+        console.log("Humidity: " + response.list[0].humidity + " %");
+        console.log("Wind Speed " + response.list[0].wind.speed + " MPH");
         console.log(response.list[0].name);
         localStorage.setItem("city", response.list[0].name);
 
@@ -36,17 +43,24 @@ function getWeather() {
     }).then(function(response) {
         console.log(response);
         $("#forecast1").empty();
+        $("#forecast1").html("<h2>" + "5 Day Forecast" + "</h2>");
+        // $("#forecast1").css("color", "white");
         for (var i = 0; i < 5; i++) {
             console.log(response.list[i].main.temp);
             var newCard = $("<div class='days'>");
             newCard.html(`
-            <div> Temperature: ${response.list[i].main.temp}&deg;F </div>
+            <div> Temp: ${response.list[i].main.temp}&deg;F </div>
             <div> Humidity: ${response.list[i].main.humidity}% </div>
             `)
             $("#forecast1").append(newCard);
 
+
         }
     });
+}
+
+for (var i = 0; i < 5; i++) {
+    console.log(tomorrow);
 }
 
 
@@ -56,12 +70,9 @@ $("#searchButton").on("click", function(event) {
 
 
 });
-$(window).on("load", function() {
-    console.log("js change");
-    var newCity = localStorage.getItem("city");
-    $("#searchDiv").prepend(newCity);
-    $("#inputValue").val(newCity);
-});
-$(newCity).on("click", function() {
-    getWeather();
-})
+// $(window).on("load", function() {
+//     console.log("js change");
+//     var newCity = localStorage.getItem("city");
+//     $("#searchDiv").prepend(newCity);
+//     $("#inputValue").val(newCity);
+// });

@@ -1,46 +1,82 @@
-    .text-center {
-        font-weight: bold;
-        font-size: 30px;
-        background-color: green;
-        color: white;
+body {
+    background: url("mountain.jpg");
+    background-size: auto, cover;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#weather {
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    margin-top: 75px;
+}
+
+#date {
+    color: white;
+}
+
+#search {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    color: white;
+}
+
+#current {
+    /* border: 1px solid lightgray; */
+    margin-top: 25px;
+    color: white;
+}
+
+#forecast1 {
+    font-size: 17px;
+    color: white;
+    margin-top: 25px;
+}
+
+#searchDiv {
+    margin-top: 25px;
+}
+
+.days {
+    display: inline-block;
+    width: 100px;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: white 1px solid;
+    padding-left: 5px;
+}
+
+#searchButton {
+    color: white;
+}
+
+@media (max-width: 992px) {
+    #inputValue {
+        width: 40%;
+        margin-right: 5px;
     }
-    
-    h1 {
-        text-align: center;
-    }
-    
-    #search {
-        background-color: lightgray;
-        font-weight: bold;
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-    
     #current {
-        background-color: white;
-        border: 1px solid lightgray;
-        padding: 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        color: black;
     }
-    
     #forecast {
-        font-size: 23px;
+        color: black;
     }
-    
-    #searchDiv {
-        margin-top: 15px;
-        margin-left: 5px;
+    #forecast1 {
+        color: black;
     }
-    
     .days {
-        display: inline-block;
-        background-color: green;
-        width: 100px;
-        color: white;
-        margin: 5px;
-        padding: 5px;
+        color: black;
+        border: black 1px solid;
     }
-    /* button {
-        background-color: white;
-    } */
+    #weather {
+        margin-top: 50px;
+    }
+    #weather {
+        color: black;
+    }
+    #date {
+        color: black;
+    }
+}
