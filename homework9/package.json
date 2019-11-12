@@ -6,10 +6,6 @@
     "scripts": {
         "test": "test"
     },
-    "repository": {
-        "type": "git",
-        "url": "JacobRosenbaum.github.io"
-    },
     "author": "Jacob Rosenbaum",
     "license": "ISC",
     "dependencies": {
