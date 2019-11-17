@@ -1,29 +1,33 @@
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
+const util = require("util");
+const pdf = require('html-pdf');
+const writeFileAsync = util.promisify(fs.writeFile);
+const readFileAsync = util.promisify(fs.readFile);
+let readFile;
 
-
-var promptUser = inquirer
-    .prompt([{
-            type: "input",
-            message: "What is your Github username?",
-            name: "username",
-        },
-        {
-            type: "list",
-            message: "What is your favorite color?",
-            name: "color",
-            choices: ["green", "blue", "purple", "red"]
-        },
-    ])
-    .then(function({ username, color }) {
-        const queryUrl = `https://api.github.com/users/${username}`;
-        console.log(color);
-        axios.get(queryUrl)
-            .then(function(response, promptUser) {
-                console.log(color);
-                fs.writeFile('github.html',
-                    `<!DOCTYPE html>
+function prompt() {
+    return inquirer.prompt([{
+                type: "input",
+                message: "What is your Github username?",
+                name: "username",
+            },
+            {
+                type: "list",
+                message: "What is your favorite color?",
+                name: "color",
+                choices: ["green", "blue", "purple", "red"]
+            },
+        ])
+        .then(function({ username, color }) {
+            const queryUrl = `https://api.github.com/users/${username}`;
+            console.log(color);
+            axios.get(queryUrl)
+                .then(function(response) {
+                    console.log(color);
+                    fs.writeFile('github.html',
+                        `<!DOCTYPE html>
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8">
@@ -97,11 +101,33 @@ var promptUser = inquirer
                 </body>
                 
                 </html>`, (err) => {
-                        if (err)
-                            throw err;
-                        console.log('The file has been saved!');
+                            if (err)
+                                throw err;
+                            console.log('The file has been saved!');
 
-                    });
+                        });
 
-            });
-    });
+                });
+        });
+}
+
+async function init() {
+    try {
+        //await fs.unlinkSync("github.pdf");
+        //await fs.unlinkSync("github.html");
+        await prompt();
+        var options = { format: 'Letter' };
+        options = {
+            height: "1200px",
+            width: "1200px"
+        }
+        readFile = await readFileAsync('github.html', 'utf8')
+    } finally {
+
+        pdf.create(readFile, options).toFile('github.pdf', function(err, res) {
+            if (err) return console.log(err);
+            console.log("pdf has been created");
+        });
+    }
+}
+init();
