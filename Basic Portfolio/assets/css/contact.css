@@ -1,0 +1,150 @@
+body {
+    background: url("../images/concrete_seamless.png");
+    background-size: auto, cover;
+}
+
+#white {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 3;
+    width: 100%;
+    border-bottom: 4px solid #cccccc;
+    height: 108px;
+}
+
+.header {
+    position: relative;
+    top: 0px;
+    background-color: white;
+    margin-top: 0px;
+    border-bottom: 4px solid #cccccc;
+    height: 100px;
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    z-index: 30;
+}
+
+#contact {
+    color: #777777;
+    margin-top: 45px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 0px;
+    margin-left: 4px;
+}
+
+#portfolio {
+    color: #777777;
+    margin-top: 45px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about {
+    color: #777777;
+    margin-top: 45px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 4px;
+}
+
+#contact:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+#about:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+#portfolio:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+#h2 {
+    color: white;
+    background-color: #4aaaa5;
+    float: left;
+    padding: 12px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.form {
+    background-color: white;
+    margin-top: 20\\40px;
+    padding-left: 25px;
+    padding-right: 25 px;
+    padding-bottom: 510px;
+    border: 2px #cccccc;
+}
+
+input {
+    width: 902px;
+    height: 30px;
+}
+
+#message {
+    height: 175px;
+}
+
+button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4aaaa5;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    padding: 8px, 8px, 8px, 8px;
+}
+
+form {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 907px;
+    border-bottom: 4px solid #cccccc;
+}
+
+#footer {
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    line-height: 40px;
+    color: white;
+}
