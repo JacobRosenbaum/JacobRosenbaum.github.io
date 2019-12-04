@@ -1,1 +1,17 @@
-[{ "title": "Test Title", "text": "Test text" }]
+[
+  {
+    "title": "Today",
+    "text": "Today has been an excellent day",
+    "id": 0
+  },
+  {
+    "title": "Next week",
+    "text": "We shall see about next week",
+    "id": 1
+  },
+  {
+    "title": "Month",
+    "text": "Well by golly, a month has gone by",
+    "id": 2
+  }
+]
