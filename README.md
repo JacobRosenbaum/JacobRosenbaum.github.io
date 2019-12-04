@@ -22,3 +22,7 @@ This project was my first interaction with node, so the deployed website will no
 
 ### Team Profile Generator: 
 This project also uses Node, so the deployed website will once again not show the complete functionality. In the terminal, the Inquirer package prompts the user to build their team. It will ask for their manager's Name, ID, Office Number, and Email. It will then ask who the user would like to add next, either an Engineer or an Intern. If the user chooses and Intern, it will ask for their Name, ID, Email, and School. IF they choose and Engineer, it will ask for their Name, Email, ID, and Github. The user can add as many team members as they would like. Once finished, node will generate the HTML for the site complete with Bootstrap cards for each employee. 
+
+### Note Taker
+This app allows the user to write down notes (with a title and body) and save them. The user also has the ability to delete the notes. When the user clicks the save button, the title and body of the note is saved on a back-end server as JSON, then stringified and appended onto the site. Since it goes through the back-end server, the notes will still be there when you refresh the page. When the user clicks the delete button, the server reads the current JSON, finds the deleted note's ID, then removes that note from the JSON database, and finally re-appends the notes back onto the page.
+This app was developed using VS Code. The languages used were HTML, CSS, JavaScript/JQuery, Node, and Express.
