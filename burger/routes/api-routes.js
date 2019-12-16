@@ -1,15 +1,12 @@
-/* Create */
-$("#addburger").on("submit", function(event) {
-    event.preventDefault();
-    var newBurger = {
-        burger_name: $("#burger_name").val().trim()
-        devoured: false;
-    };
+var Burger = require("../models/burger.js");
 
-    $.ajax("/api/clients", {
-        type: "POST",
-        data: newBurger
-    }).then(function() {
-        console.log("added new Burger");
+// Routes
+// =============================================================
+module.exports = function(app) {
+    // Get all books
+    app.get("/api/all", function(req, res) {
+        Burger.findAll({}).then(function(results) {
+            res.json(results);
+        });
     });
-});
+}
