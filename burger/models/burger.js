@@ -1,15 +1,29 @@
-var Sequelize = require("sequelize");
-// sequelize (lowercase) references my connection to the DB.
-var sequelize = require("../config/connection.js");
+var orm = require("../config/orm.js");
 
-// Creates a "Book" model that matches up with DB
-var Burger = sequelize.define("burger", {
-    burger_name: Sequelize.STRING,
-    devoured: Sequelize.BOOLEAN
-});
+var burger = {
+    selectAll: function(cb) {
+        orm.selectAll("burgers", function(res) {
+            cb(res);
+        });
+    },
 
-// Syncs with DB
-Book.sync();
+    insertOne: function(cols, vals, cb) {
+        orm.insertOne("burgers", cols, vals, function(res) {
+            cb(res);
+        });
+    },
 
-// Makes the Book Model available for other files (will also create a table)
-module.exports = Book;
+    updateOne: function(objColVals, condition, cb) {
+        orm.updateOne("burgers", objColVals, condition, function(res) {
+            cb(res);
+        });
+    },
+
+    delete: function(condition, cb) {
+        orm.delete("burgers", condition, function(res) {
+            cb(res);
+        });
+    }
+};
+
+module.exports = burger;

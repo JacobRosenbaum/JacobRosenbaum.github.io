@@ -5,11 +5,11 @@ $("#addburger").on("submit", function(event) {
         burger_name: $("#burger_name").val().trim()
     };
 
-    $.ajax("/api/clients", {
+    $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
     }).then(function(data) {
-        console.log(data);
+        $("#burgerArea").prepend(data);
     });
-    $("#burger").val("");
+    $("#burger_name").val("");
 });
