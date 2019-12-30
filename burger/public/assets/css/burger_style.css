@@ -1,8 +1,23 @@
-body {
+#body {
     background-color: orange;
 }
 
-.fas fa-hamburger {
-    width: 250px;
-    height: 250px;
+#addburger {
+    color: white;
+    background-color: red;
+    border: 1px red solid;
+}
+
+#devourButton {
+    color: white;
+    background-color: red;
+    border: 1px red solid;
+    margin-left: 20px;
+}
+
+#deleteButton {
+    color: white;
+    background-color: red;
+    border: 1px red solid;
+    margin-left: 20px;
 }
