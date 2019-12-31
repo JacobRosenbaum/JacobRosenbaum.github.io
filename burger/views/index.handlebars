@@ -1,0 +1,41 @@
+
+<div class = "container" style="margin: 0 auto">
+    <div class = "jumbotron" style = "background-color: orange; text-align: center">
+        <img src = "/assets/img/burger.png" alt="Burger" style= "margin-bottom: 50px"> 
+        <h1 style= "margin-bottom: 50px; color: red">
+            Eat-Da-Burger
+        </h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h2 style = "margin-bottom: 30px">Burgers</h2>
+                <ul style = "margin-bottom: 20px; text-align:center">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                    {{/unless}}
+                    {{/each}}
+                </ul> 
+     </div>
+    <div class="col-md-6">
+        <h2 style = "margin-bottom: 30px">Devoured</h2>
+      <ul style = "margin-bottom: 20px; text-align:center">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+        <form class="create-form">
+            <div class="form-group">
+                <label for="burger_name"></label>
+                <input type="text" id="burger_name" name="name" style= "width: 350px; height: 50px;">
+            </div>
+            <button id ="addburger" type="button" style= "margin-bottom: 10px"class="btn btn-primary">Burger-Me</button>
+            <div style= "margin-bottom: 50px"id = "enter">
+            Enter a Burger you would like to eat, then click the "Burger-Me" button
+            <div>
+        </form>
+    </div>
+</div>

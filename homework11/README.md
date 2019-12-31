@@ -1,8 +1,7 @@
 # Welcome to my Note Taker!
 
-### Deployed Link 
-(Will not be fully functional, as Github does not handle Node and Express)
-https://jacobrosenbaum.github.io/homework11/public/index.html
+### Deployed Heroku Link 
+https://note-taker11.herokuapp.com/ 
 
 ### Functionality
 
