@@ -48,11 +48,6 @@ h2 {
     color: #777777;
 }
 
-
-/*.col-lg-10{
-    margin-left: 10%; 
-}*/
-
 footer {
     position: fixed;
     left: 0;
@@ -74,6 +69,7 @@ footer {
     text-align: center;
     font-size: 17px;
     height: 30px;
+    color: white
 }
 
 img {
@@ -85,10 +81,6 @@ img {
     width: 300px;
     height: 210px;
     background-color: moccasin;
-}
-
-.label:hover {
-    color: blue;
 }
 
 #lock {
@@ -105,15 +97,45 @@ img {
 
 @media (max-width: 1200px) {
     img {
-        margin: 30px;
+        height: 175px;
+        width: 250px;
     }
-    label {
-        margin: 30px;
+    .label {
+        width: 250px;
+    }
+    #box {
+        height: 175px;
+        width: 250px;
+    }
+    #database {
+        display: none;
+    }
+    .label1 {
+        margin-right: 10px;
+        font-size: 3px;
+        color: gold;
+    }
+    #lock {
+        left: 125px;
+        height: 87px;
     }
 }
+
+@media (max-width: 992px) {}
 
 .slideInDown {
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+}
+
+.label1 {
+    position: relative;
+    bottom: 30px;
+    left: 95px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    /* width: 175px; */
 }
