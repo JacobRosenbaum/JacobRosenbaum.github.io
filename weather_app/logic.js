@@ -64,7 +64,7 @@ for (var i = 0; i < 5; i++) {
 }
 
 
-$("#searchButton").on("click", function(event) {
+$("#submitButton").on("submit", function(event) {
 
     getWeather();
 
