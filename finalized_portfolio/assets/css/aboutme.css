@@ -1,5 +1,5 @@
 body {
-    background: url("assets/concrete.png");
+    background: url("../images/concrete.png");
     background-size: auto, cover;
 }
 
@@ -11,8 +11,8 @@ body {
 
 #jacob {
     background-color: black;
-    color: white;
     padding: 13px;
+    color: white;
 }
 
 h1 {
@@ -21,10 +21,10 @@ h1 {
 }
 
 .jumbotron {
-    background-color: white;
+    background: url("../images/concrete.png");
     color: #777777;
-    border: #dddddd solid 2px;
-    margin-bottom: 85px;
+    /* border: #dddddd solid 2px; */
+    margin-bottom: 124px;
 }
 
 .row {
@@ -49,22 +49,14 @@ footer {
     font-family: 'Roboto Mono', monospace;
 }
 
-.form-group {
-    font-family: 'Roboto Mono', monospace;
-    color: #777777;
+.slideInRight {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
 }
 
-.form-group {
-    color: black;
-}
-
-#button {
-    background-color: black;
-    border-color: black;
-}
-
-#back {
-    float: right;
-    background-color: black;
-    border-color: black;
+#bio-image {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }

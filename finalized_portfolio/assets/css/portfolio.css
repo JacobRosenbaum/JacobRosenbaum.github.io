@@ -1,5 +1,5 @@
 body {
-    background: url("assets/concrete.png");
+    background: url("../images/concrete.png");
     background-size: auto, cover;
 }
 
@@ -25,7 +25,7 @@ h2 {
 }
 
 .jumbotron {
-    background: url("assets/concrete.png");
+    background: url("../images/concrete.png");
     color: #777777;
     /* border: #dddddd solid 2px; */
 }
