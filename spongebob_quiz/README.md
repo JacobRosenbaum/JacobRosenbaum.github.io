@@ -14,4 +14,4 @@ Good luck!!
 
 ### Technologies Used
 
-This app was developed using VS Code using the languages: HTML, css, and JavaScript. I also used Bootstrap to help give my css a more repsonsive design. 
+This app was developed using VS Code using the languages: HTML, CSS, and JavaScript. I also used Bootstrap to help give my css a more repsonsive design. 
