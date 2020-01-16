@@ -110,18 +110,39 @@ img {
     #database {
         display: none;
     }
-    .label1 {
-        margin-right: 10px;
-        font-size: 3px;
-        color: gold;
-    }
     #lock {
         left: 125px;
         height: 87px;
     }
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    img {
+        height: 140px;
+        width: 200px;
+    }
+    .label {
+        width: 200px;
+        font-size: 14px;
+    }
+    #title {
+        font-size: 49px;
+    }
+    #box {
+        height: 140px;
+        width: 200px;
+    }
+    #database {
+        display: none;
+    }
+    #lock {
+        left: 100px;
+        height: 130px;
+    }
+    .label1 {
+        font-size: 13px;
+    }
+}
 
 .slideInDown {
     animation-duration: 1s;

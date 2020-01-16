@@ -39,3 +39,10 @@ h2 {
 #grad {
     font-size: 65px;
 }
+
+
+/* @media (max-width: 992px) {
+    .responsive {
+        width: 75%;
+    }
+} */
