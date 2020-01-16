@@ -6,6 +6,7 @@ var div1 = $("#div1");
 var emptyDiv = $("#emptyDiv");
 var wholeDiv = $("#wholeDiv");
 var score = 0;
+var jumbotron = $(".jumbotron")
 
 function startTimer() {
     var timerInterval = setInterval(function() {
@@ -13,7 +14,10 @@ function startTimer() {
         timer.textContent = "Time: " + secondsLeft + " seconds left";
         if (secondsLeft === 0 || globalQuestionIndex === 5) {
             clearInterval(timerInterval);
-            alert("Game Over... You scored " + (score + secondsLeft) + " point(s)");
+            setInterval(function() {
+                jumbotron.empty();
+                jumbotron.html("Game over... you scored " + (score + secondsLeft) + " point(s)");
+            }, 1000)
         }
     }, 1000);
 }

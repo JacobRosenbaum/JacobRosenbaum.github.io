@@ -13,32 +13,22 @@
 </head>
 
 <body>
-    <span id="timer">Time: </span> <button id="view">View Highscores</button>
     <div class="container">
         <div class="jumbotron">
+            <span id="timer">Time: </span>
             <div id="beg">
                 <h1 class="display-4">Spongebob Squarepants Quiz</h1>
                 <p class="lead"> Try to answer the following Spongebob-related questions within the time limit. Keep in mind that incorrect answers will subtract ten seconds from your time.</p>
                 <hr class="my-4">
                 <button type="button" id="startQuiz" class="btn btn-primary">Start Quiz</button>
-
             </div>
             <div id="wholeDiv">
                 <div id="questionDiv"></div>
                 <div id="emptyDiv">
-
-                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
-
-        </button>
-                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
-
-        </button>
-                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
-
-        </button>
-                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none>
-
-        </button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none></button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none></button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none> </button>
+                    <button onclick="submitAnswer(this)" class="buttonAnswer" style=display:none></button>
                     <div id="div1"></div>
                 </div>
             </div>
