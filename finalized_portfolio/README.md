@@ -1,6 +1,6 @@
 # Welcome to my website!
 
-### Here, you can navigate to my About ME section, where you can find out a little bit about my background. 
+### Here, you can navigate to my About Me section, where you can find out a little bit about my background. 
 
 ### Or, you can head on over to my Portfolio page to check out some of my cool projects. 
 
