@@ -10,5 +10,5 @@ I used the inquirer package to prompt the user questions asking what they would 
 
 This app was developed using VS Code and MySQL database.I used JavaScipt, Node (inqiurer, mysql, consol.table, and cfonts packages), and MySQL database. 
 
-### Demo
+
 
