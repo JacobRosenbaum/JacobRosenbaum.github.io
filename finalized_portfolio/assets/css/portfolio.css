@@ -144,6 +144,12 @@ img {
     }
 }
 
+@media(max-width:768px) {
+    img {
+        display: block;
+    }
+}
+
 .slideInDown {
     animation-duration: 1s;
     animation-delay: 0s;
