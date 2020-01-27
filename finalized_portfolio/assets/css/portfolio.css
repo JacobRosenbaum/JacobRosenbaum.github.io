@@ -30,24 +30,18 @@ h2 {
     /* border: #dddddd solid 2px; */
 }
 
-.row {
-    font-family: 'Roboto Mono', monospace;
-    color: #777777;
-}
 
+}
 .col-lg-3 {
     margin-right: 25px;
 }
-
 .col-lg-7 {
     margin-bottom: 0px;
 }
-
 .nav-item {
     font-family: 'Roboto Mono', monospace;
     color: #777777;
 }
-
 footer {
     position: fixed;
     left: 0;
@@ -59,7 +53,6 @@ footer {
     padding: 15px;
     font-family: 'Roboto Mono', monospace;
 }
-
 .label {
     position: relative;
     bottom: 45px;
@@ -71,91 +64,50 @@ footer {
     height: 30px;
     color: white
 }
-
 img {
     width: 300px;
     height: 210px;
 }
-
 #box {
     width: 300px;
     height: 210px;
     background-color: moccasin;
 }
-
 #lock {
     color: black;
     position: relative;
     left: 150px;
     top: 80px;
 }
-
 #projects {
     margin-bottom: 20px;
     font-family: 'Roboto Mono', monospace;
 }
-
+.col-m-4 {
+    margin: auto;
+    /* text-align: center; */
+}
+.flexContainer {
+    padding-left: 150px;
+}
+.row {
+    /* text-align: center; */
+}
 @media (max-width: 1200px) {
-    img {
-        height: 175px;
-        width: 250px;
-    }
-    .label {
-        width: 250px;
-    }
-    #box {
-        height: 175px;
-        width: 250px;
-    }
-    #database {
-        display: none;
-    }
-    #lock {
-        left: 125px;
-        height: 87px;
+    .flexContainer {
+        padding-left: 87px;
     }
 }
-
 @media (max-width: 992px) {
-    img {
-        height: 140px;
-        width: 200px;
-    }
-    .label {
-        width: 200px;
-        font-size: 14px;
-    }
-    #title {
-        font-size: 49px;
-    }
-    #box {
-        height: 140px;
-        width: 200px;
-    }
-    #database {
-        display: none;
-    }
-    #lock {
-        left: 100px;
-        height: 130px;
-    }
-    .label1 {
-        font-size: 13px;
+    .flexContainer {
+        padding-left: 0px;
     }
 }
-
-@media(max-width:768px) {
-    img {
-        display: block;
-    }
-}
-
 .slideInDown {
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
-
 .label1 {
     position: relative;
     bottom: 30px;
@@ -164,5 +116,4 @@ img {
     text-align: center;
     padding: 10px;
     font-size: 25px;
-    /* width: 175px; */
 }
