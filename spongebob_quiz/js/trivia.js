@@ -6,17 +6,28 @@ var div1 = $("#div1");
 var emptyDiv = $("#emptyDiv");
 var wholeDiv = $("#wholeDiv");
 var score = 0;
-var jumbotron = $(".jumbotron")
+var jumbotron = $(".jumbotron");
+var questionDiv = $("#questionDiv");
 
 function startTimer() {
+    $("#playAgin").on("click", startGame);
     var timerInterval = setInterval(function() {
         secondsLeft--;
         timer.textContent = "Time: " + secondsLeft + " seconds left";
         if (secondsLeft === 0 || globalQuestionIndex === 5) {
             clearInterval(timerInterval);
             setInterval(function() {
-                jumbotron.empty();
-                jumbotron.html("Game over... you scored " + (score + secondsLeft) + " point(s)");
+                // jumbotron.empty();
+                if (score >= 50) {
+                    questionDiv.html("Whoa... You killed it! You got " + (score + secondsLeft) + " point(s)");
+                    div1.html(`<button id= "playAgain" style="color:blue"> Play again? <button>`);
+                } else if (score >= 30 && score < 50) {
+                    questionDiv.html("You did ok I guess, you got " + (score + secondsLeft) + " point(s)");
+                    div1.html(`<button id= "playAgain" style="color:blue"> Play again? <button>`);
+                } else if (score < 30) {
+                    questionDiv.html("Pretty bad if you ask me, you only got " + (score + secondsLeft) + " point(s)");
+                    div1.html(`<button id= "playAgain" style="color:blue"> Play again? <button>`);
+                }
             }, 1000)
         }
     }, 1000);
@@ -42,7 +53,9 @@ function startGame() {
 function renderQuestion() {
     globalQuestionIndex++;
     if (globalQuestionIndex === 5) {
-        wholeDiv.empty();
+        setTimeout(function() {
+            wholeDiv.empty();
+        }, 1000)
     } else {
         setTimeout(function() {
 
@@ -76,12 +89,12 @@ function submitAnswer(elem) {
     if (correctAnswer != submittedAnswer) {
         $(".buttonAnswer").css("background-color", "red");
         secondsLeft = secondsLeft - 15;
-        div1.text("WRONG");
+        // div1.text("WRONG");
         renderQuestion();
     } else if (correctAnswer == submittedAnswer) {
         score++;
         $(".buttonAnswer").css("background-color", "lightgreen");
-        div1.text("CORRECT!!");
+        // div1.text("CORRECT!!");
         renderQuestion()
     }
 };
