@@ -30,8 +30,6 @@ h2 {
     /* border: #dddddd solid 2px; */
 }
 
-
-}
 .col-lg-3 {
     margin-right: 25px;
 }
@@ -90,9 +88,7 @@ img {
 .flexContainer {
     padding-left: 150px;
 }
-.row {
-    /* text-align: center; */
-}
+
 @media (max-width: 1200px) {
     .flexContainer {
         padding-left: 87px;
@@ -103,7 +99,6 @@ img {
         padding-left: 0px;
     }
 }
-<<<<<<< HEAD
 
 @media(max-width:768px) {
     img {
@@ -111,8 +106,6 @@ img {
     }
 }
 
-=======
->>>>>>> b92898ba2009e33c4b4a79b69e0ffed564eec244
 .slideInDown {
     animation-duration: 1s;
     animation-delay: 0s;
