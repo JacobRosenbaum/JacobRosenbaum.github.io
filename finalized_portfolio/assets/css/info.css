@@ -58,7 +58,7 @@ footer {
     font-family: 'Roboto Mono', monospace;
 }
 
-.slideInLeft {
+.slideInRight {
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;

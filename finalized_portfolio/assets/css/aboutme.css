@@ -1,3 +1,16 @@
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+#bodyText {
+    font-size: 2rem; 
+    }
+    #bio-image{
+        width: 350px;
+        height: auto;  
+    }
+  }     
+
 body {
     background: url("../images/concrete.png");
     background-size: auto, cover;
@@ -49,7 +62,7 @@ footer {
     font-family: 'Roboto Mono', monospace;
 }
 
-.slideInRight {
+.slideInLeft {
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -60,3 +73,4 @@ footer {
     margin-bottom: 10px;
     margin-right: 20px;
 }
+
