@@ -10,7 +10,7 @@ var jumbotron = $(".jumbotron");
 var questionDiv = $("#questionDiv");
 
 function startTimer() {
-    $("#playAgin").on("click", startGame);
+    
     var timerInterval = setInterval(function() {
         secondsLeft--;
         timer.textContent = "Time: " + secondsLeft + " seconds left";
@@ -18,20 +18,24 @@ function startTimer() {
             clearInterval(timerInterval);
             setInterval(function() {
                 // jumbotron.empty();
-                if (score >= 50) {
+                if (score + secondsLeft >= 50) {
                     questionDiv.html("Whoa... You killed it! You got " + (score + secondsLeft) + " point(s)");
-                    div1.html(`<button id= "playAgain" style="color:blue"> Play again? <button>`);
-                } else if (score >= 30 && score < 50) {
+                    div1.html(`<button class="btn btn-primary" id= "playAgain" style="color:white;"> Play again? </button>`);
+                } else if (score + secondsLeft >= 30 && score < 50) {
                     questionDiv.html("You did ok I guess, you got " + (score + secondsLeft) + " point(s)");
-                    div1.html(`<button id= "playAgain" style="color:blue"> Play again? <button>`);
-                } else if (score < 30) {
+                    div1.html(`<button class="btn btn-primary" id= "playAgain" style="color:white;"> Play again? </button>`);
+                } else if (score + secondsLeft < 30) {
                     questionDiv.html("Pretty bad if you ask me, you only got " + (score + secondsLeft) + " point(s)");
-                    div1.html(`<button id= "playAgain" style="color:blue"> Play again? <button>`);
+                    div1.html(`<button onclick = startgame class="btn btn-primary" id= "playAgain" style="color:white;"> Play again? </button>`);
                 }
-            }, 1000)
+            }, 500)
         }
     }, 1000);
 }
+
+function play2(){
+    $("#playAgin").on("click", startGame);
+};
 
 function startGame() {
     console.log(myQuestions[0].question);
@@ -54,7 +58,8 @@ function renderQuestion() {
     globalQuestionIndex++;
     if (globalQuestionIndex === 5) {
         setTimeout(function() {
-            wholeDiv.empty();
+            $("#questionDiv").empty();
+            $("#timer").empty();
         }, 1000)
     } else {
         setTimeout(function() {
