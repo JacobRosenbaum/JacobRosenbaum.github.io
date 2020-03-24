@@ -33,13 +33,16 @@ h2 {
 .col-lg-3 {
     margin-right: 25px;
 }
+
 .col-lg-7 {
     margin-bottom: 0px;
 }
+
 .nav-item {
     font-family: 'Roboto Mono', monospace;
     color: #777777;
 }
+
 footer {
     position: fixed;
     left: 0;
@@ -51,6 +54,7 @@ footer {
     padding: 15px;
     font-family: 'Roboto Mono', monospace;
 }
+
 .label {
     position: relative;
     bottom: 45px;
@@ -62,29 +66,35 @@ footer {
     height: 30px;
     color: white
 }
+
 img {
     width: 300px;
     height: 210px;
 }
+
 #box {
     width: 300px;
     height: 210px;
     background-color: moccasin;
 }
+
 #lock {
     color: black;
     position: relative;
     left: 150px;
     top: 80px;
 }
+
 #projects {
     margin-bottom: 20px;
     font-family: 'Roboto Mono', monospace;
 }
+
 .col-m-4 {
     margin: auto;
     /* text-align: center; */
 }
+
 .flexContainer {
     padding-left: 150px;
 }
@@ -94,6 +104,7 @@ img {
         padding-left: 87px;
     }
 }
+
 @media (max-width: 992px) {
     .flexContainer {
         padding-left: 0px;
@@ -106,12 +117,56 @@ img {
     }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    #bodyText {
+        font-size: 2rem;
+    }
+
+    #bio-image {
+        width: 350px;
+        height: auto;
+    }
+
+    footer {
+        font-size: 2.4rem
+    }
+
+    #jacob {
+        font-size: 2.4rem
+    }
+
+    .display-4 {
+        font-size: 5rem
+    }
+    .flexContainer{
+        display: block;
+    }
+    img{
+        height: 420px;
+        width: 600px;
+        margin-right: 400px
+    }
+    #box{
+        height: 420px;
+        width: 600px;
+        margin-right: 400px
+    }
+    #lock {
+        color: black;
+        position: relative;
+        left: 300px;
+        top: 160px;
+        height: 400px;
+        width: 400px
+    }
+}
 
 .slideInDown {
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
 }
+
 .label1 {
     position: relative;
     bottom: 30px;
