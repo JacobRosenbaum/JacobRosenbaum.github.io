@@ -94,4 +94,7 @@ footer {
     .display-4 {
         font-size: 5rem
     }
+    .nav-link{
+        font-size: 2rem
+    }
 }
