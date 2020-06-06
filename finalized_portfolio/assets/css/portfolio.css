@@ -9,6 +9,14 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+#google {
+    width: 300px;
+    height: 210px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
+}
+
 #jacob {
     background-color: black;
     color: white;
@@ -98,6 +106,7 @@ img {
 .flexContainer {
     padding-left: 150px;
 }
+
 .label1 {
     position: relative;
     bottom: 30px;
@@ -125,10 +134,10 @@ img {
         display: block;
     }
 }
+
 /* iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)
- {
-    .label{
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .label {
         position: relative;
         bottom: 90px;
         background-color: black;
@@ -138,6 +147,7 @@ img {
         font-size: 30px;
         height: 60px;
     }
+
     #bodyText {
         font-size: 2rem;
     }
@@ -153,20 +163,23 @@ img {
     .display-4 {
         font-size: 5rem
     }
-    img{
+
+    img {
         height: 420px;
         width: 600px;
         /* margin-right: 400px */
     }
-    .portfolioImage{
-        margin-right: 400px 
+
+    .portfolioImage {
+        margin-right: 400px
     }
-    
-    #box{
+
+    #box {
         height: 420px;
         width: 600px;
         margin-right: 400px
     }
+
     #lock {
         color: black;
         position: relative;
@@ -174,13 +187,16 @@ img {
         top: 160px;
         font-size: 50px
     }
-    #nav{
+
+    #nav {
         width: 100%
     }
-    .flexContainer{
+
+    .flexContainer {
         display: block;
         /* margin-right: 400px */
     }
+
     .label1 {
         position: relative;
         bottom: 60px;
@@ -191,10 +207,11 @@ img {
         font-size: 50px;
         /* margin-right: 400px;  */
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 2rem
     }
-    
+
 }
 
 .slideInDown {
