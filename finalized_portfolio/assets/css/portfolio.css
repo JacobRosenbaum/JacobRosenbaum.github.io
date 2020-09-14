@@ -89,8 +89,11 @@ img {
 #lock {
     color: black;
     position: relative;
+    left: 50%;
+    top: 40%
+    /* position: relative;
     left: 150px;
-    top: 80px;
+    top: 80px; */
 }
 
 #projects {
@@ -116,7 +119,20 @@ img {
     padding: 10px;
     font-size: 25px;
 }
+#vote{
+   
+        width: 300px;
+        height: 210px;
+        background-color: white;
 
+}
+#voteSticker{
+    height: 130px;
+    width: 130px;
+    position: relative;
+    left: 82px;
+    top: 20px
+}
 @media (max-width: 1200px) {
     .flexContainer {
         padding-left: 87px;
@@ -165,6 +181,20 @@ img {
     }
 
     img {
+        height: 420px;
+        width: 600px;
+        /* margin-right: 400px */
+    }
+    #vote {
+        height: 420px;
+        width: 600px;
+        /* margin-right: 400px */
+    }
+    #voteSticker{
+        top: 30%;
+        left: 40%
+    }
+    #google {
         height: 420px;
         width: 600px;
         /* margin-right: 400px */
